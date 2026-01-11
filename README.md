@@ -55,17 +55,4 @@ Once the virtual enviroment is configured, continue with the packages installati
 ### Data
 [*Kaggle (Cybersecurity: Suspicious Web Threat Interactions)*](https://www.kaggle.com/datasets/jancsg/cybersecurity-suspicious-web-threat-interactions)
 
-**Prerequisites:**
-To download the dataset, you need:
-1. A **Kaggle account** (free): [Sign up here](https://www.kaggle.com/account/login)
-2. A **Kaggle API token** (`kaggle.json`)
-
-**Kaggle credential:**
-1. Log in to your Kaggle account.
-2. Go to **Account Settings** → **API** section.
-3. Click **"Create New Token"**.
-4. This will download a `kaggle.json` file containing your credentials.
-
-The Kaggle API credentials are configured directly in the notebook. Simply upload your `kaggle.json` file when prompted, and the dataset will be automatically downloaded to the project directory.
-
-**Note:** Keep your `kaggle.json` file secure and never commit it to version control. The file contains your API credentials.
+*(Included in the project)*
