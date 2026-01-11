@@ -32,6 +32,7 @@ pip install pandas>=2.0.0 \
             jupyter>=1.0.0 \
             ipython>=8.12.0 \
             joblib>=1.3.0 \
+            streamlit==1.52.2 \
             kaggle>=1.6.0
 ```
 
