@@ -1,6 +1,6 @@
 # Cybersecurity: Anomaly Detection in Suspicious Web Threat Interactions Using Machine Learning
 
-## [Isolation Forest Anomaly Detection (Streamlit app)](https://isolationforest-anomalies.streamlit.app/)
+### [Isolation Forest Anomaly Detection (Streamlit app)](https://isolationforest-anomalies.streamlit.app/)
 
 The present project is aimed at detecting suspicious activities and potential attack attempts in web traffic interactions. It follows a systematic approach:
 
