@@ -37,7 +37,6 @@ pip install pandas>=2.0.0 \
             jupyter>=1.0.0 \
             ipython>=8.12.0 \
             joblib>=1.3.0 \
-            streamlit==1.52.2 \
 ```
 
 Alternatively, you can run the `requirements.txt` included in the project using the following command: `pip install -r requirements.txt`. It is also recommended to create a virtual enviroment for dependencies management:
