@@ -35,35 +35,14 @@ The Isolation Forest flags every record the baseline flags plus 8 more that look
 * **Threshold**: the model uses `contamination='auto'` (score threshold 0.5), so the share of flagged records is not an estimate of the real attack rate.
 * **Unused columns**: `duration_seconds` is constant (600 s) and the remaining columns have one or few distinct values, so they were left out of the model.
 
-### Interactive page
-The trained pipeline runs directly in the browser, with no backend: nothing the user types is sent anywhere.
-
-1. `scripts/export_model.py` converts `pipeline/pipeline.joblib` (scaler and Isolation Forest) into `model.json`, and checks that the exported model reproduces the scikit-learn scores.
-2. The static page (`anomaly_detector.html`, `detector_styles.css` and `app.js`) loads `model.json` and scores each connection with the same algorithm as scikit-learn.
-
-To regenerate the exported model after retraining:
-
-```bash
-python scripts/export_model.py pipeline/pipeline.joblib model.json
-```
-
-To try the page locally, serve the folder that contains the page and `model.json` (opening the file directly does not work, because browsers block `fetch` on local files):
-
-```bash
-python -m http.server 8080
-```
-
 ### Directory Structure
-* `app.py`: Streamlit application script.
 * `notebook.ipynb`: Jupyter Notebook with the code.
 * `requirements.txt`: Required libraries for notebook execution.
 * `dataset/`: Dataset in CSV format.
 * `pipeline/`: Directory with the exported pipeline (scaler and Isolation Forest model).
-* `model.json`: Pipeline exported for the web page.
 * `scripts/`: Custom Python scripts.
     - `scripts/df_summary.py`: For a complete dataset summary generation.
     - `scripts/baseline_model.py`: Script with baseline model class.
-    - `scripts/export_model.py`: Exports the pipeline to `model.json`.
 
 ### Requirements
 You can install the necessary libraries by running the following command:
